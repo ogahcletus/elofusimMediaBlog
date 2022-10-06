@@ -4,6 +4,7 @@ import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import "./singlePost.css";
+import React from 'react';
 
 export default function SinglePost() {
   const location = useLocation();
@@ -62,7 +63,7 @@ export default function SinglePost() {
         ) : (
           <h1 className="singlePostTitle">
             {title}
-            {post.username === user?.username && (
+            {post.username === user.username && (
               <div className="singlePostEdit">
                 <i
                   className="singlePostIcon far fa-edit"
