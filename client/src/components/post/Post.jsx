@@ -4,6 +4,8 @@ import React from 'react';
 
 export default function Post({ post }) {
   const PF = "http://localhost:5000/images/";
+    
+
   return (
     <div className="post">
       {post.photo && <img className="postImg" src={PF + post.photo} alt="" />}

@@ -32,7 +32,8 @@ function App() {
         <Route path="/contact">
           <Contact />
         </Route>
-        <Route path="/post/:postId">
+        <Route path="/post/:_id">
+        <Route path='/posts'/>
           <Single />
         </Route>
       </Switch>
